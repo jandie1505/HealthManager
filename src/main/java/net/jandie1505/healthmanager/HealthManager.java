@@ -12,15 +12,23 @@ public class HealthManager extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
-        Config.load();
-        Messages.load();
-        if(Config.isPapiEnabled()) {
-            Placeholders.load();
-        }
+        configReload();
         Bukkit.getLogger().info("HealthManager3 was successfully enabled");
     }
 
     public static HealthManager getPlugin() {
         return plugin;
+    }
+
+    public static String getVersion() {
+        return Bukkit.getVersion();
+    }
+
+    public static void configReload() {
+        Config.load();
+        Messages.load();
+        if(Config.isPapiEnabled()) {
+            Placeholders.load();
+        }
     }
 }
