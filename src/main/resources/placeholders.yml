@@ -1,0 +1,27 @@
+# ----- Placeholders file of HealthManager3 -----
+
+# - Health -
+# Placeholder: %healthmanager_health%
+PlaceholderHealth: "{LIVES}"
+
+# - Max Health -
+# Placeholder: %healthmanager_maxhealth%
+PlaceholderMaxhealth: "{MAXHEALTH}"
+
+# - Foodlevel/Hunger -
+# Placeholder: %healthmanager_foodlevel%
+PlaceholderFoodlevel: "{FOODLEVEL}"
+
+# - Saturation -
+# Placeholder: %healthmanager_saturationlevel%
+PlaceholderSaturationlevel: "{SATURATIONLEVEL}"
+
+# - Godmode enabled -
+# Placeholder: %healthmanager_godmode%
+PlaceholderGodmodeEnabled: "On"
+PlaceholderGodmodeDisabled: "Off"
+
+# - Saturation Mode -
+# Placeholder: %healthmanager_saturationmode%
+PlaceholderSaturationmodeEnabled: "On"
+PlaceholderSaturationmodeDisabled: "Off"

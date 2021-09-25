@@ -1,0 +1,20 @@
+# ----- HealthManager3 configuration file -----
+
+# - Send Message to the Target -
+# If this is enabled, the target player will see a message if he gets healed or modified.
+# If this is disabled, only the executor will see a message.
+sendMessagesToTarget: true
+
+# - Enable PlaceholderAPI-Support -
+# If this is enabled, you can use the PlaceholderAPI to display lives, food level, saturation, ...
+# If this is disabled, this won't work.
+placeholderapi: true
+
+# - onlySubcommands -
+# If this is enabled, all healthmanager commands will be included to the /healthmanager command (e.g. /healthmanager maxhealth set <Player> <Amount>)
+# If this is disabled, you will have all commands as normal commands (e.g. /maxhealth set <Player> <Amount>) AND subcommands
+#onlySubcommands: false
+
+# - updateNotify -
+# If this is enabled, every player with the permission healthmanager.updatenotify will get a message if an update is available
+updateNotify: true
