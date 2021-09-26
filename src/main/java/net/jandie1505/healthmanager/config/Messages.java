@@ -131,7 +131,7 @@ public class Messages {
         return result;
     }
 
-    public static String getSethealthMessage(String playerName, int lives){
+    public static String getSethealthMessage(String playerName, double lives){
         String message;
         String result;
         message = sethealthMessage;
@@ -228,7 +228,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getHealthGetMessage(String playerName, int health){
+    public static String getHealthGetMessage(String playerName, double health){
         String message;
         String result;
         message = healthGetMessage;

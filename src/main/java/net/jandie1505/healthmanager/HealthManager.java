@@ -1,5 +1,6 @@
 package net.jandie1505.healthmanager;
 
+import net.jandie1505.healthmanager.commands.CmdHealth;
 import net.jandie1505.healthmanager.config.Config;
 import net.jandie1505.healthmanager.config.Messages;
 import net.jandie1505.healthmanager.config.Placeholders;
