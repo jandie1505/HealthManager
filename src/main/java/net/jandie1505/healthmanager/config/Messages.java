@@ -205,7 +205,7 @@ public class Messages {
         return result;
     }
 
-    public static String getHealthSetMessage(String playerName, int health){
+    public static String getHealthSetMessage(String playerName, double health){
         String message;
         String result;
         message = healthSetMessage;
@@ -217,7 +217,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getHealthSetTargetMessage(int health){
+    public static String getHealthSetTargetMessage(double health){
         String message;
         String result;
         message = healthSetTargetMessage;
@@ -240,7 +240,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getHealthAddMessage(String playerName, int health, int addedHealth){
+    public static String getHealthAddMessage(String playerName, double health, double addedHealth){
         String message;
         String result;
         message = healthAddMessage;
@@ -253,7 +253,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getHealthAddTargetMessage(int health, int addedHealth){
+    public static String getHealthAddTargetMessage(double health, double addedHealth){
         String message;
         String result;
         message = healthAddTargetMessage;
@@ -265,7 +265,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getHealthRemoveMessage(String playerName, int health, int removedHealth){
+    public static String getHealthRemoveMessage(String playerName, double health, double removedHealth){
         String message;
         String result;
         message = healthRemoveMessage;
@@ -278,7 +278,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getHealthRemoveTargetMessage(int health, int removedHealth){
+    public static String getHealthRemoveTargetMessage(double health, double removedHealth){
         String message;
         String result;
         message = healthRemoveTargetMessage;
@@ -294,7 +294,7 @@ public class Messages {
         return healthErrorMessage;
     }
 
-    public static String getMaxhealthSetMessage(String playerName, int maxHealth){
+    public static String getMaxhealthSetMessage(String playerName, double maxHealth){
         String message;
         String result;
         message = maxhealthSetMessage;
@@ -306,7 +306,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getMaxhealthSetTargetMessage(int maxHealth){
+    public static String getMaxhealthSetTargetMessage(double maxHealth){
         String message;
         String result;
         message = maxhealthSetTargetMessage;
@@ -317,7 +317,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getMaxhealthGetMessage(String playerName, int maxHealth){
+    public static String getMaxhealthGetMessage(String playerName, double maxHealth){
         String message;
         String result;
         message = maxhealthGetMessage;
@@ -329,7 +329,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getMaxhealthAddMessage(String playerName, int maxHealth, int addedMaxHealth){
+    public static String getMaxhealthAddMessage(String playerName, double maxHealth, double addedMaxHealth){
         String message;
         String result;
         message = maxhealthAddMessage;
@@ -342,7 +342,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getMaxhealthAddTargetMessage(int maxHealth, int addedMaxHealth){
+    public static String getMaxhealthAddTargetMessage(double maxHealth, double addedMaxHealth){
         String message;
         String result;
         message = maxhealthAddTargetMessage;
@@ -354,7 +354,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getMaxhealthRemoveMessage(String playerName, int maxHealth, int removedMaxHealth){
+    public static String getMaxhealthRemoveMessage(String playerName, double maxHealth, double removedMaxHealth){
         String message;
         String result;
         message = maxhealthRemoveMessage;
@@ -367,7 +367,7 @@ public class Messages {
         result = sub.replace(message);
         return result;
     }
-    public static String getMaxhealthRemoveTargetMessage(int maxHealth, int removedMaxHealth){
+    public static String getMaxhealthRemoveTargetMessage(double maxHealth, double removedMaxHealth){
         String message;
         String result;
         message = maxhealthRemoveTargetMessage;
