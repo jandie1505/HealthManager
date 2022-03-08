@@ -38,7 +38,7 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                             Player target = Bukkit.getPlayer(args[1]);
                             if(target != null) {
                                 try {
-                                    target.setHealth(Double.parseDouble(args[2]));
+                                    target.setFoodLevel(Integer.parseInt(args[2]));
                                     Messages.defaultMessage(p, Messages.getFoodSetMessage(target.getName(), target.getFoodLevel()));
                                 } catch(Exception e) {
                                     Messages.defaultMessage(p, Messages.getFoodErrorMessage());
@@ -59,7 +59,7 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                             if(target != null) {
                                 try {
                                     int newFoodLevel = target.getFoodLevel() + Integer.parseInt(args[2]);
-                                    target.setHealth(newFoodLevel);
+                                    target.setFoodLevel(newFoodLevel);
                                     Messages.defaultMessage(p, Messages.getFoodAddMessage(target.getName(), target.getFoodLevel(), Integer.parseInt(args[2])));
                                 } catch(Exception e) {
                                     Messages.defaultMessage(p, Messages.getFoodErrorMessage());
@@ -80,10 +80,10 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                             if(target != null) {
                                 try {
                                     int newFoodLevel = (target.getFoodLevel() - Integer.parseInt(args[2]));
-                                    target.setHealth(newFoodLevel);
+                                    target.setFoodLevel(newFoodLevel);
                                     Messages.defaultMessage(p, Messages.getFoodRemoveMessage(target.getName(), target.getFoodLevel(), Integer.parseInt(args[2])));
                                 } catch(Exception e) {
-                                    Messages.defaultMessage(p, Messages.getHealthErrorMessage());
+                                    Messages.defaultMessage(p, Messages.getFoodErrorMessage());
                                 }
                             } else {
                                 Messages.defaultMessage(p, Messages.playernotfound);
@@ -102,7 +102,7 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                     if(args.length == 2) {
                         Player target = Bukkit.getPlayer(args[1]);
                         if(target != null) {
-                            Bukkit.getLogger().info(Messages.getHealthGetMessage(target.getName(), target.getHealth()));
+                            Bukkit.getLogger().info(Messages.getFoodGetMessage(target.getName(), target.getFoodLevel()));
                         } else {
                             Bukkit.getLogger().info(Messages.playernotfound);
                         }
@@ -114,10 +114,10 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                         Player target = Bukkit.getPlayer(args[1]);
                         if(target != null) {
                             try {
-                                target.setHealth(Double.parseDouble(args[2]));
-                                Bukkit.getLogger().info(Messages.getSethungerMessage(target.getName(), target.getHealth()));
+                                target.setFoodLevel(Integer.parseInt(args[2]));
+                                Bukkit.getLogger().info(Messages.getSethungerMessage(target.getName(), target.getFoodLevel()));
                             } catch(Exception e) {
-                                Bukkit.getLogger().info(Messages.getHealthErrorMessage());
+                                Bukkit.getLogger().info(Messages.getFoodErrorMessage());
                             }
                         } else {
                             Bukkit.getLogger().info(Messages.playernotfound);
@@ -130,11 +130,11 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                         Player target = Bukkit.getPlayer(args[1]);
                         if(target != null) {
                             try {
-                                double newHealth = target.getHealth() + Double.parseDouble(args[2]);
-                                target.setHealth(newHealth);
-                                Bukkit.getLogger().info(Messages.getSethungerMessage(target.getName(), target.getHealth()));
+                                int newFoodLevel = target.getFoodLevel() + Integer.parseInt(args[2]);
+                                target.setFoodLevel(newFoodLevel);
+                                Bukkit.getLogger().info(Messages.getSethungerMessage(target.getName(), target.getFoodLevel()));
                             } catch(Exception e) {
-                                Bukkit.getLogger().info(Messages.getHealthErrorMessage());
+                                Bukkit.getLogger().info(Messages.getFoodErrorMessage());
                             }
                         } else {
                             Bukkit.getLogger().info(Messages.playernotfound);
@@ -147,11 +147,11 @@ public class CmdFoodlevel implements CommandExecutor, TabCompleter {
                         Player target = Bukkit.getPlayer(args[1]);
                         if(target != null) {
                             try {
-                                double newHealth = target.getHealth() - Double.parseDouble(args[2]);
-                                target.setHealth(newHealth);
-                                Bukkit.getLogger().info(Messages.getSethungerMessage(target.getName(), target.getHealth()));
+                                int newFoodLevel = target.getFoodLevel() - Integer.parseInt(args[2]);
+                                target.setFoodLevel(newFoodLevel);
+                                Bukkit.getLogger().info(Messages.getSethungerMessage(target.getName(), target.getFoodLevel()));
                             } catch(Exception e) {
-                                Bukkit.getLogger().info(Messages.getHealthErrorMessage());
+                                Bukkit.getLogger().info(Messages.getFoodErrorMessage());
                             }
                         } else {
                             Bukkit.getLogger().info(Messages.playernotfound);
